@@ -1,0 +1,74 @@
+{
+    "clientId": "urn:federation:MicrosoftOnline",
+    "adminUrl": "https://login.microsoftonline.com/login.srf",
+    "surrogateAuthRequired": false,
+    "enabled": true,
+    "alwaysDisplayInConsole": false,
+    "clientAuthenticatorType": "client-secret",
+    "redirectUris": [],
+    "webOrigins": [],
+    "notBefore": 0,
+    "bearerOnly": false,
+    "consentRequired": false,
+    "standardFlowEnabled": true,
+    "implicitFlowEnabled": false,
+    "directAccessGrantsEnabled": false,
+    "serviceAccountsEnabled": false,
+    "publicClient": false,
+    "frontchannelLogout": true,
+    "protocol": "saml",
+    "attributes": {
+        "saml.force.post.binding": "true",
+        "saml.multivalued.roles": "false",
+        "oauth2.device.authorization.grant.enabled": "false",
+        "backchannel.logout.revoke.offline.tokens": "false",
+        "saml.server.signature.keyinfo.ext": "false",
+        "use.refresh.tokens": "true",
+        "saml.signing.certificate": "MIICyzCCAbMCBgF+cIawmDANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDDB51cm46ZmVkZXJhdGlvbjpNaWNyb3NvZnRPbmxpbmUwHhcNMjIwMTE5MDQwODAyWhcNMzIwMTE5MDQwOTQyWjApMScwJQYDVQQDDB51cm46ZmVkZXJhdGlvbjpNaWNyb3NvZnRPbmxpbmUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCjSL1DZQTBPB573uN0ywA9H4AyyXhG5yshtt7uulaVFyfqd8pAQPQVq4rSM1hSLWZwx/4hSbiSIfif5AGYWPyxknh9IESDqz9b7Cy08WnFZlVQTKrt3OpH1zN1w9cQ78UmmatV1HIJZFIw1VhvEFeziT3178R1X8Mm22LU9M5oNNPMn2mTx2D9ljzoFYQlR57bzSdmIL9xlPY35e3zgTpRRuW9iXkhQyBQ7Ead2kWs+NiFEpfK/ykR+0jKhyCX/6eSUh/sz/7d2b/I33VnEfPQlPtVZUYGEV0fjKaB0a/g7RTzRkHFjqhLk9i0m9NMsiJJFvRwIh6TvluFH+gkDkDFAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAASOgPLM7TC1UW+E0LOfH6KxhksI9vkwwhYxJ3HsWUPlVnWjSQzyOTzMv+EreE+W8RLGLgBfoqpU5oI1J8guMBEKedgx72/PCKwB7UrePHcvfO0yi1g29GD5BQ3TY28nC7ZZYR+hKlHnN/srB0LOYHE8baJXyk9E3ptxGbnQZt/+KCp03pOvhV3fM8f3vm72KqKh96k07orDyZhkb88cosqfWGqiabr9Et4ycOXi0cqL1NIeKb5cGnTGLFjwnBc/doxzgyG3g1jqFEvSiOjRfJlwe0y5Qvc2c2HrDfS6wBzVBy9NkTmdO+2hDS5X1EAwaSLVF0+qSYBCwFR81woyNuM=",
+        "oidc.ciba.grant.enabled": "false",
+        "backchannel.logout.session.required": "false",
+        "client_credentials.use_refresh_token": "false",
+        "saml.signature.algorithm": "RSA_SHA256",
+        "require.pushed.authorization.requests": "false",
+        "saml.client.signature": "false",
+        "saml.signing.private.key": "MIIEpQIBAAKCAQEAo0i9Q2UEwTwee97jdMsAPR+AMsl4RucrIbbe7rpWlRcn6nfKQED0FauK0jNYUi1mcMf+IUm4kiH4n+QBmFj8sZJ4fSBEg6s/W+wstPFpxWZVUEyq7dzqR9czdcPXEO/FJpmrVdRyCWRSMNVYbxBXs4k99e/EdV/DJtti1PTOaDTTzJ9pk8dg/ZY86BWEJUee280nZiC/cZT2N+Xt84E6UUblvYl5IUMgUOxGndpFrPjYhRKXyv8pEftIyocgl/+nklIf7M/+3dm/yN91ZxHz0JT7VWVGBhFdH4ymgdGv4O0U80ZBxY6oS5PYtJvTTLIiSRb0cCIek75bhR/oJA5AxQIDAQABAoIBACgcPznl/9QEE6z0JMXU9DsPmOtg6GXqdYLzrDHSnmBDbu+++3TrP8pu+EwIhuKw+mAsELZWqLtlEvEcDnRBL9njFCwQmCQMFiVbj+PnBceTCtQN8VM7GGYLbD26nQMxEyoXR6pu5JCAD1ylm/K0fgbBaPIYMxduLb9G1zFe7bFVGr5bc5xEOWn8nBk0l/PN+qWljKNFgVSUZ8i84/9uTOwsEM/bvdOxjdI0AXpHtHsmRajgGvc7ZaA2Ss1uyXikz4GPz070zSvF17voy77d/vbzGgzJ41SxWuyNOzVenZyVEE41Y1GIddvZyBVMGBXRudkEvgjXlZ7P1bJvfWc8CMUCgYEA9InJxs1hNDMqYHuBXuINzIYyVM8maTEHV1cgUMak08cK+OJccT2c+Nxs2+wfIAhSdKCrimr+VOgtVJ+myLEn2nZ3IUSGPH4QwHRnWzw8wkjRY07AGKH7WgQ0THg506e5aIRXxMZMMcg2tsKyZl0sdAV1YTtDOvUrHXKyDx5/fLMCgYEAqu/76VnPRhY5UwmEPc7wQOuNx122wuwiwYqO/wNB8U5JAzL5zQO7gHXR/7g3S3GP4GZCQim5q9vjTzVk0jnYSrGcnWQVmZfixA196WsYZXdB0iHWhKJEKimjYRqojqb5zzSwWjCS814crzau9xMEgFgqqXWgyTdqCIbnyKnQeKcCgYEAhPUZ+XaXoFslcloUiDNej1JzsTsERnN661ka3/BxlBgH9jSVUJjQbVrj8VtbvP3pXzIwsszjxeSLKRS5CSuRYK3Crhrk5aUhlJJ109xXqMcQ2e7qcTo5QMNCcEV6I4NxQsuaMQokSXjzjsEjYJbOYbLKFHi1YCwHKja/a4sIhBMCgYEAn8N/GkGjdakt2MtrOu2gJb1DHRQcziAv996N+hDMYEHAAepyCUi0xcLZDH3byHqSc7R/tyESdWsmEBEic043NtC8RWqWuaB5BK5rgW9kNOl6rnCL9BlJRnL2TbrB0dqEX0KqlRETN709aBHfA/RVX7OH5CyZo5dUVjXoiucUfr8CgYEAnoK4TFRebFO+QqHbcZtZi5FqdjAxLiKmk2RRzO5n1i1ZQlH3Tnz5JuI9m/UkdFDUVf7fZm9YH45an1tVQQduMQ2EJq6wFyO/XtbRl3FzRg6kReWZ84YUNjr+aWk3rYtSH+0GxhZb+Q5ZVAXVseUgB27XnqW9z18+EPk59IAicVo=",
+        "id.token.as.detached.signature": "false",
+        "saml.assertion.signature": "false",
+        "saml.encrypt": "false",
+        "saml.server.signature": "true",
+        "exclude.session.state.from.auth.response": "false",
+        "saml.artifact.binding.identifier": "Ohzdm/95RuxvhGbq/vi8GUTaHf4=",
+        "saml.artifact.binding": "false",
+        "saml_force_name_id_format": "false",
+        "tls.client.certificate.bound.access.tokens": "false",
+        "saml.authnstatement": "true",
+        "display.on.consent.screen": "false",
+        "saml_name_id_format": "persistent",
+        "saml.onetimeuse.condition": "false",
+        "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#"
+    },
+    "authenticationFlowBindingOverrides": {},
+    "fullScopeAllowed": true,
+    "nodeReRegistrationTimeout": -1,
+    "protocolMappers": [
+        {
+            "name": "AzureUPN",
+            "protocol": "saml",
+            "protocolMapper": "saml-user-attribute-mapper",
+            "consentRequired": false,
+            "config": {
+                "user.attribute": "AzureUPN",
+                "attribute.name": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+            }
+        }
+    ],
+    "defaultClientScopes": [
+        "role_list"
+    ],
+    "optionalClientScopes": [],
+    "access": {
+        "view": true,
+        "configure": true,
+        "manage": true
+    }
+}
