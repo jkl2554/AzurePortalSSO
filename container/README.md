@@ -1,5 +1,5 @@
 # Container 배포  
-## [deploy_container.sh](./deploy_conatiner.sh)  
+## [deploy_container.sh](./deploy_container.sh)  
 - Nginx 및 Certbot host machine에 설치  
 - podman에 keycloak container만 설정  
 
