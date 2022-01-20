@@ -1,7 +1,9 @@
 # AzurePortalSSO
 ## 리소스 배포
 1. 가상머신 배포
+- 가상머신 사이즈는 상관 없음
 2. IP에 DNS Lable등록(선택사항, 도메인 있을 경우 필요없음)
+- DNS Lable 등록 해 도메인 사용
 ## 애플리케이션 배포
 ## [keycloak 설정](./keycloak/)
 ## Azure Portal 설정
@@ -31,4 +33,3 @@ Azure Active Directory - Users
 - Keycloak 로그인창으로 리다이렉션 및 로그인
 - keycloak 로그인 성공 후 게스트 초대 수락
 - 정상적으로 로그인 확인
-
