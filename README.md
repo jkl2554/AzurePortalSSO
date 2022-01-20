@@ -5,7 +5,7 @@
 2. IP에 DNS Lable등록(선택사항, 도메인 있을 경우 필요없음)
 - DNS Lable 등록 해 도메인 사용
 ## 애플리케이션 배포
-1. [conatiner 배포](./conatiner)
+1. [conatiner 배포](./container)
 2. [k8s 배포](./k8s)
 ## [keycloak 설정](./keycloak/)
 ## Azure Portal 설정
