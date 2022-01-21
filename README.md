@@ -30,7 +30,7 @@ Azure Active Directory - Users
 
 ## Federation 동작 테스트
 
-- https://portal.azure.com/\<tenant id\>로 접속  
+- `https://portal.azure.com/<tenant id>`로 접속  
 - `test@<your domain>`으로 로그인 시도  
 - Keycloak 로그인창으로 리다이렉션 및 로그인
 - keycloak 로그인 성공 후 게스트 초대 수락
