@@ -1,0 +1,23 @@
+<md:EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Name="urn:keycloak">
+<md:EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master">
+<md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo>
+<ds:KeyName>Iz0Ne3E96f2ZmzM-1XdqP00TC2kp5Ie6TVscjIOZB_A</ds:KeyName>
+<ds:X509Data>
+<ds:X509Certificate>MIICmzCCAYMCBgF4yfWUjzANBgkqhkiG9w0BAQsFADARMQ8wDQYDVQQDDAZtYXN0ZXIwHhcNMjEwNDEzMDYzODM4WhcNMzEwNDEzMDY0MDE4WjARMQ8wDQYDVQQDDAZtYXN0ZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCJHfWQFkPdX6zCYwgr8M61HXmfOIiJ8e/X2thw+MP2J8TbqekmJDKgjzPF3UTJiolW4IwR3ghIHoooXsxmUKHfgSZ1mGSh6c5/4qrNEtkhVUh9WF4KRHhAMYmq+IuEcV2k2rjoFY1qcT7WsudombOK5Vg3onmsx8w30YjOnKo5QMhrNjjPB8VGhgcIIJin4kFGj/uuTf/4FaqyOXYfU+1+39E8jwOxeVBee+YO2HmmJTMYE0DKLw7HrGETwcmUxZVwGnrcLU2vZK4H/aVVpBple4tQzPQNHxpiO5OpxPYW+mQiLKMTp8mczHJoO1ZXQohej708WN4E85VonS9IkKl3AgMBAAEwDQYJKoZIhvcNAQELBQADggEBACCw1sjV2uFyeHP+d2vOFdJOe+c0mQmBh2xgu+DcH7MbOYH2zPiDagEm41EXwZ8SCQtU8giejF3IcgxiaK1Luh1QYjgThodedwaQ6Dqo74xuZpwnwz1CU1DwMTPARwI2FZxYSxDwDPzAs4C0x/VhTarow9NklnepPPYFHTaXmeP8JifKKjG/5NsoYj0xoBbz10Yv6/gDCKeiSmM9PSfmNfYZM1RbwXwqzLrhNHfUxHPjmD4gTjrujOmLTIcPaLueOhdFxju2dTOxppiEp+pEjyqIe2BdXjN0/2KWa1XnB6ne5tbK+5TjR76GZ50GYKstF4WwtoZhexYabmiS7svt030=</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master/protocol/saml"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master/protocol/saml"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master/protocol/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master/protocol/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://hyugo-sso.koreacentral.cloudapp.azure.com/auth/realms/master/protocol/saml"/>
+</md:IDPSSODescriptor>
+</md:EntityDescriptor>
+</md:EntitiesDescriptor>
