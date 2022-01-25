@@ -136,3 +136,16 @@ Keycloak was installed with an Ingress and an be reached at the following URL(s)
 
   - https://keycloak.koreacentral.cloudapp.azure.com/
 ```
+
+## 리소스 정리
+
+```s
+## helm 삭제
+helm del -n keycloak keycloak
+helm del -n keycloak nginx-ingress
+helm del -n keycloak cert-manager
+
+## namespace 삭제
+kubectl delete ns keycloak
+
+```
