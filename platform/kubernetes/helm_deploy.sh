@@ -36,10 +36,13 @@ helm install cert-manager jetstack/cert-manager \
                 --set webhook.nodeSelector."kubernetes\.io/os"=linux \
                 --set cainjector.nodeSelector."kubernetes\.io/os"=linux 
 
-read -p "메일 주소 입력:" EMAIL_ADDR
 
+read -p "issuer 등록용 메일 주소 입력:" EMAIL_ADDR
+out=""
+while [ "$out" != 'clusterissuer.cert-manager.io/letsencrypt configured' ]
+do
 #issuer 생성
-cat <<EOF | kubectl apply -f - 
+out=$(cat <<EOF | kubectl apply -f - 
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
@@ -59,7 +62,8 @@ spec:
               nodeSelector:
                 "kubernetes.io/os": linux
 EOF
-
+)
+done
 ####################### deploy keycloak ###################
 # Add The keycloak repo
 helm repo add codecentric https://codecentric.github.io/helm-charts
