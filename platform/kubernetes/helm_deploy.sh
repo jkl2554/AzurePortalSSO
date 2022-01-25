@@ -41,6 +41,7 @@ read -p "issuer 등록용 메일 주소 입력:" EMAIL_ADDR
 out=""
 while [ "$out" != 'clusterissuer.cert-manager.io/letsencrypt configured' ]
 do
+sleep 1
 #issuer 생성
 out=$(cat <<EOF | kubectl apply -f - 
 apiVersion: cert-manager.io/v1alpha2
