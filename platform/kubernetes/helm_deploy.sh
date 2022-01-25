@@ -65,6 +65,7 @@ spec:
 EOF
 )
 done
+echo 'clusterissuer.cert-manager.io/letsencrypt created'
 ####################### deploy keycloak ###################
 # Add The keycloak repo
 helm repo add codecentric https://codecentric.github.io/helm-charts
