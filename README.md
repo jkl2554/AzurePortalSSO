@@ -6,7 +6,7 @@
 - DNS Lable 등록 해 도메인 사용
 ## 애플리케이션 배포
 1. [conatiner 배포](./platform/container)
-2. [k8s 배포](./platform/k8s)
+2. [kubernetes 배포](./platform/kubernetes)
 ## [keycloak 설정](./keycloak/)
 ## Azure Portal 설정
 ### Direct Federation 설정
