@@ -2,7 +2,7 @@
 
 INGRESS_CLASS='nginx'
 
-EMAIL_ADDR='your@email.org'
+# EMAIL_ADDR='your@email.org' -> issuer생성 시 입력받음
 KEYCLOAK_ADMIN='admin'
 KEYCLOAK_PASSWORD='qwer1234!@#$'
 

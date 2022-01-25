@@ -34,7 +34,7 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 # Use Helm to deploy an NGINX ingress controller
 ## 사용자 지정 도메인 사용 시 --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-dns-label-name"="$DNS_LABEL" 줄 제거
-helm install nginx-ingress ingress-nginx/ingress-nginx \
+helm install ingress-nginx ingress-nginx/ingress-nginx \
     --namespace keycloak \
     --set controller.replicaCount=1 \
     --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-dns-label-name"="$DNS_LABEL"  \
@@ -142,7 +142,7 @@ Keycloak was installed with an Ingress and an be reached at the following URL(s)
 ```s
 ## helm 삭제
 helm del -n keycloak keycloak
-helm del -n keycloak nginx-ingress
+helm del -n keycloak ingress-nginx
 helm del -n keycloak cert-manager
 
 ## namespace 삭제

@@ -9,7 +9,7 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 # Use Helm to deploy an NGINX ingress controller
 ## 사용자 지정 도메인 사용 시 --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-dns-label-name"="$DNS_LABEL" 줄 제거
-helm install nginx-ingress ingress-nginx/ingress-nginx \
+helm install ingress-nginx ingress-nginx/ingress-nginx \
     --namespace keycloak \
     --set controller.replicaCount=1 \
     --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-dns-label-name"="$DNS_LABEL" \
@@ -36,6 +36,8 @@ helm install cert-manager jetstack/cert-manager \
                 --set webhook.nodeSelector."kubernetes\.io/os"=linux \
                 --set cainjector.nodeSelector."kubernetes\.io/os"=linux 
 
+read -p "메일 주소 입력:" EMAIL_ADDR
+
 #issuer 생성
 cat <<EOF | kubectl apply -f - 
 apiVersion: cert-manager.io/v1alpha2
@@ -57,6 +59,7 @@ spec:
               nodeSelector:
                 "kubernetes.io/os": linux
 EOF
+
 ####################### deploy keycloak ###################
 # Add The keycloak repo
 helm repo add codecentric https://codecentric.github.io/helm-charts
