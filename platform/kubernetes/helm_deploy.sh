@@ -3,7 +3,7 @@
 kubectl create ns keycloak
 
 ############## ingress #########################
-INGRESS_CLASS="keycloak-ingress"
+
 # Add the ingress-nginx repository
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
@@ -68,10 +68,10 @@ helm install keycloak codecentric/keycloak \
                 --set ingress.annotations."kubernetes\.io/ingress\.class"=$INGRESS_CLASS \
                 --set ingress.annotations."cert-manager\.io/cluster-issuer"=letsencrypt \
                 --set ingress.annotations."nginx\.ingress\.kubernetes\.io/force-ssl-redirect"=\"true\" \
-                --set ingress.rules[0].host=$DNS_LABEL.koreacentral.cloudapp.azure.com \
+                --set ingress.rules[0].host=$DOMAIN \
                 --set ingress.rules[0].paths[0].path="/" \
                 --set ingress.rules[0].paths[0].pathType=Prefix \
-                --set ingress.tls[0].hosts[0]=$DNS_LABEL.koreacentral.cloudapp.azure.com \
+                --set ingress.tls[0].hosts[0]=$DOMAIN \
                 --set ingress.tls[0].secretName=tls-secret \
                 --set extraEnv="
 - name: KEYCLOAK_USER
