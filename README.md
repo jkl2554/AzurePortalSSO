@@ -35,3 +35,5 @@ Azure Active Directory - Users
 - Keycloak 로그인창으로 리다이렉션 및 로그인
 - keycloak 로그인 성공 후 게스트 초대 수락
 - 정상적으로 로그인 확인
+
+## [SSO 용 Redirection URL 생성](redirect_url)
