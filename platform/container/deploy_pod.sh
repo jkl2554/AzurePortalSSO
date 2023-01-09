@@ -1,10 +1,11 @@
+#!/bin/bash
+
 ## ubuntu 20.04기준
 
 ### 사용할 도메인 정보
-
-domain=keycloak.koreacentral.cloudapp.azure.com
-
-
+domain=$1
+### Email Address
+Email=$2
 ## pod에 배포
 
 #podman 설치
@@ -68,7 +69,7 @@ server {
 
 ## Lets encrypt 인증서는 일주일에 5개 까지밖에 만들지 못하니 배포 주의
 podman run -dt -p 8080:80 -p 8443:443 --pod new:keycloak-pod \
-           --env CERTBOT_EMAIL=<Your Email> \
+           --env CERTBOT_EMAIL=$Email \
            -v $(pwd)/nginx_secrets:/etc/letsencrypt \
            -v $(pwd)/user_conf.d:/etc/nginx/user_conf.d:ro \
            --name nginx-certbot jonasal/nginx-certbot:latest

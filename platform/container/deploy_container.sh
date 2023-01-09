@@ -1,8 +1,9 @@
+#!/bin/bash
+
 ## ubuntu 20.04기준
 
 ### 사용할 도메인 정보
-
-domain=keycloak.koreacentral.cloudapp.azure.com
+domain=$1
 
 # podman 설치
 . /etc/os-release
