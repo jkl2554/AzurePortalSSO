@@ -12,10 +12,9 @@ Add realm 위치
 Configure - Clients - Create  
 Client 생성  
 ![client 생성](./img/client1.jpg)  
-- Client ID: `urn:federation:MicrosoftOnline`  
+- Client ID: `https://login.microsoftonline.com/<tenant ID>/`  
 - Client Protocol: `saml`  
 - Client SAML Endpoint: `https://login.microsoftonline.com/login.srf`  
-*Import를 사용할 경우 [이 파일](./urn_federation_MicrosoftOnline.json) 사용 및 [Test User생성](#Test-User-생성)으로 건너뛰기
 
 Settings 탭 변경  
 ![client settings](./img/client2.jpg)  
