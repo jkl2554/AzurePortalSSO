@@ -149,7 +149,7 @@ server {
 
 ## Lets encrypt 인증서는 일주일에 5개 까지밖에 만들지 못하니 배포 주의
 podman run -dt -p 8080:80 -p 8443:443 --pod new:keycloak-pod \
-           --env CERTBOT_EMAIL=jkl2554@cloocus.com \
+           --env CERTBOT_EMAIL=<Your Email> \
            -v $(pwd)/nginx_secrets:/etc/letsencrypt \
            -v $(pwd)/user_conf.d:/etc/nginx/user_conf.d:ro \
            --name nginx-certbot jonasal/nginx-certbot:latest
