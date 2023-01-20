@@ -168,8 +168,8 @@ podman logs -f nginx-certbot
 ## System 데몬 등록
 ```s
 mkdir -p ~/.config/systemd/user/
-podman generate systemd keycloak -f ~/.config/systemd/user/keycloak  ## keycloak.service
-podman generate systemd nginx-certbot -f ~/.config/systemd/user/nginx-certbot  ## nginx-certbot.service
+podman generate systemd keycloak > ~/.config/systemd/user/keycloak.service ## keycloak.service
+podman generate systemd nginx-certbot > ~/.config/systemd/user/nginx-certbot.service  ## nginx-certbot.service
 ## 서비스
 systemctl --user enable keycloak
 systemctl --user enable nginx-certbot
